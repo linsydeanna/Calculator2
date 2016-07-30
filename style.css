@@ -1,0 +1,45 @@
+#main-container {
+  border: 1px black solid;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.row {
+  border-bottom: 1px gray solid;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#row-one {
+  height: 100px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+input {
+  height: 60%;
+}
+
+.white-button {
+  border-right: 1px gray solid;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.orange-button {
+  background-color: #FF8F00;
+  flex-grow: 1;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+#zero {
+  flex-grow: 2;
+}
