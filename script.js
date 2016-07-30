@@ -1,23 +1,86 @@
-var ac = document.querySelector("#AC");
-var negate = document.querySelector("#negate")
-var percentage = document.querySelector("#percentage")
-var divide = document.querySelector("#divide")
 
-var seven = document.querySelector("#seven")
-var eight = document.querySelector("#eight")
-var nine = document.querySelector("#nine")
-var multiply = document.querySelector("#multiply")
+var sevenbutton = document.getElementById("sevenbutton");
+var eightbutton = document.getElementById("eightbutton");
+var ninebutton = document.getElementById("ninebutton");
+var fourbutton = document.getElementById("fourbutton");
+var fivebutton = document.getElementById("fivebutton");
+var sixbutton = document.getElementById("sixbutton");
+var onebutton = document.getElementById("onebutton");
+var twobutton = document.getElementById("twobutton");
+var threebutton = document.getElementById("threebutton");
+var zerobutton = document.getElementById("zerobutton");
+var equalbutton = document.getElementById("equalbutton");
+var addbutton = document.getElementById("addbutton");
+var subtractbutton = document.getElementById("subtractbutton");
+var dividebutton = document.getElementById("dividebutton");
+var multiplybutton = document.getElementById("multiplybutton");
+var clearbutton = document.getElementById("clearbutton");
 
-var four = document.querySelector("#four")
-var five = document.querySelector("#five")
-var six = document.querySelector("#six")
-var subtract = document.querySelector("#subtract")
+var allnumbers = [];
 
-var one = document.querySelector("#one")
-var two = document.querySelector("#two")
-var three = document.querySelector("#three")
-var add = document.querySelector("#add")
+sevenbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "7";
+});
 
-var zero = document.querySelector("#zero")
-var decimal = document.querySelector("#decimal")
-var equal = document.querySelector("#equal")
+eightbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "8";
+});
+
+ninebutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "9";
+});
+
+fourbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "4";
+});
+
+fivebutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "5";
+});
+
+sixbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "6";
+});
+
+onebutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "1";
+});
+
+twobutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "2";
+});
+
+threebutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "3";
+});
+
+zerobutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "0";
+});
+
+addbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "+";
+});
+
+subtractbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "-";
+});
+
+dividebutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "/";
+});
+
+multiplybutton.addEventListener("click", function(event){
+  document.getElementById("screen").value += "*";
+});
+
+equalbutton.addEventListener("click", function(event){
+  allnumbers = eval(document.getElementById("screen").value);
+  document.getElementById("screen").value = allnumbers
+  console.log(allnumbers);
+});
+
+clearbutton.addEventListener("click", function(event){
+  document.getElementById("screen").value = "";
+  allnumbers = [];
+});

@@ -5,6 +5,16 @@
   border-radius: 5px;
 }
 
+.number {
+  height: 100px;
+  width: 100px;
+}
+
+.calculate {
+  height: 100px;
+  width: 100px;
+}
+/*
 .row {
   border-bottom: 1px gray solid;
   display: flex;
@@ -43,3 +53,5 @@ p {
 #zero {
   flex-grow: 2;
 }
+
+*/
