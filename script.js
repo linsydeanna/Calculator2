@@ -20,38 +20,47 @@ var allnumbers = [];
 
 sevenbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "7";
+  allnumbers.push(7);
 });
 
 eightbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "8";
+  allnumbers.push(8);
 });
 
 ninebutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "9";
+  allnumbers.push(9);
 });
 
 fourbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "4";
+  allnumbers.push(4);
 });
 
 fivebutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "5";
+  allnumbers.push(5);
 });
 
 sixbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "6";
+  allnumbers.push(6);
 });
 
 onebutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "1";
+  allnumbers.push(1);
 });
 
 twobutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "2";
+  allnumbers.push(2);
 });
 
 threebutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "3";
+  allnumbers.push(3);
 });
 
 zerobutton.addEventListener("click", function(event){
@@ -60,24 +69,37 @@ zerobutton.addEventListener("click", function(event){
 
 addbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "+";
+  allnumbers.push("+");
 });
 
 subtractbutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "-";
+  allnumbers.push("-");
 });
 
 dividebutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "/";
+  allnumbers.push("/");
 });
 
 multiplybutton.addEventListener("click", function(event){
   document.getElementById("screen").value += "*";
+  allnumbers.push("*");
 });
 
 equalbutton.addEventListener("click", function(event){
-  allnumbers = eval(document.getElementById("screen").value);
-  document.getElementById("screen").value = allnumbers
-  console.log(allnumbers);
+  var a = allnumbers[0];
+  var b = allnumbers[2];
+  if (allnumbers[1] === "+") {
+    var result = a + b;
+  } else if (allnumbers[1] === "-") {
+    var result = a - b;
+  } else if (allnumbers[1] === "/") {
+    var result = a / b;
+  } else if (allnumbers[1] === "*") {
+    var result = a * b;
+  }
+  document.getElementById("screen").value = result;
 });
 
 clearbutton.addEventListener("click", function(event){
