@@ -23,9 +23,10 @@ button {
 
 #screen {
   height: 95px;
-  width: 95px;
-  float: right;
+  width: 98%;
+  text-align: right;
   font-size: 50px;
+  border-color: #EE8C25;
 }
 
 .calculate {
